@@ -19,8 +19,8 @@ The hyperparameters available to you are :
 ```javascript
 l=3 #Number of layers
 layer_neuron=np.array([784,120,10]) #Number of neurons in each layer. 1st must be 784 and last must be 10
-alpha = 0.11
-lambda = 0.1
+alpha = 0.11 # learning rate
+lambda = 0.1 # regularisation contant
 ```
 Change the above variable to extend the neural network infinitely.
 ### Note
@@ -31,7 +31,8 @@ Change the above variable to extend the neural network infinitely.
 
 Improvements to this can be made by :
 1) Changing to Batch Gradient Descent.
-2) Grid/Linear Search for hyperparameter tuning.
-3) Weight initialisation using special methods like xavier initialisation.\
+2) LR scheduling
+3) Grid/Linear Search for hyperparameter tuning.
+4) Weight initialisation using special methods like xavier initialisation.\
 \
 https://towardsdatascience.com/weight-initialization-in-neural-networks-a-journey-from-the-basics-to-kaiming-954fb9b47c79 is a fairly detailed analysis and intuition for weight initialisation.
